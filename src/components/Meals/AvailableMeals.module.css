@@ -1,35 +1,31 @@
 .meals {
-    max-width: 60rem;
-    width: 90%;
-    margin: 2rem auto;
-    animation: meals-appear 1s ease-out forwards;
-  }
-  
-  .meals ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .mealsError{
-    
-    text-align: center;
-    color: red;
+  max-width: 60rem;
+  width: 90%;
+  /* margin: 2rem auto; */
+  animation: meals-appear 1s ease-out forwards;
+}
 
+.meals ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mealsError {
+  text-align: center;
+  color: red;
+}
+.mealsLoading {
+  text-align: center;
+  color: white;
+}
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
   }
-  .mealsLoading{
 
-    text-align: center;
-    color: white;
-
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  @keyframes meals-appear {
-    from {
-      opacity: 0;
-      transform: translateY(3rem);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+}

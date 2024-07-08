@@ -14,13 +14,15 @@ function App() {
   };
 
   return (
-    <CartProvider val>
-      {cartIsShown && <Cart onClose={hideCartHandler} />}
-      <Header onShownCart={showCartHandler} />
-      <main>
-        <Meals />
-      </main>
-    </CartProvider>
+    <div className="w-screen bg-[#282c34]">
+      <CartProvider val>
+        {cartIsShown && <Cart onClose={hideCartHandler} />}
+        <Header onShownCart={showCartHandler} />
+        <main>
+          <Meals />
+        </main>
+      </CartProvider>
+    </div>
   );
 }
 

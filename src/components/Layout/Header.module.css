@@ -1,23 +1,5 @@
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* width: 110%; when i set it to 110% 
-    it does not give me the desired input  */
-  height: 5rem;
-  background-color: #8a2b06;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  z-index: 10;
-}
-
 .main-image {
-  width: 100%;
+  width: 110%;
   height: 25rem;
   z-index: 0;
   overflow: hidden;
@@ -28,59 +10,4 @@
   height: 100%;
   object-fit: cover;
   transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
-}
-@media only screen and (max-width: 576px) {
-  .main-image {
-    width: 105%;
-    height: 25rem;
-    z-index: 0;
-    overflow: hidden;
-  }
-
-  .header {
-    justify-content: center;
-    gap: 2rem;
-
-    padding: 0;
-  }
-  .header h1 {
-    font-size: 24px;
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  .main-image {
-    width: 100vw;
-    height: 25rem;
-    z-index: 0;
-    overflow: hidden;
-  }
-
-  .header {
-    justify-content: space-evenly;
-    /* gap: 2rem; */
-
-    padding: 0;
-  }
-  .header h1 {
-    font-size: 28px;
-  }
-}
-
-@media only screen and (min-width: 769px) {
-  .main-image {
-    width: 100vw;
-    height: 25rem;
-    z-index: 0;
-    overflow: hidden;
-  }
-
-  .header {
-    justify-content: space-evenly;
-    /* gap: 2rem; */
-
-    padding: 0;
-  }
-  .header h1 {
-    font-size: 28px;
-  }
 }
