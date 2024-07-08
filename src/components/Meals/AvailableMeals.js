@@ -18,7 +18,7 @@ const AvailableMeals = (props) => {
         throw new Error("Something Went wrong");
       }
       const responseData = await response.json();
-
+      console.log(responseData);
       const loadedMeals = [];
       for (const key in responseData) {
         loadedMeals.push({

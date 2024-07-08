@@ -4,7 +4,7 @@ import HeaderCartButton from "./HeaderCartButton";
 import classes from "./Header.module.css";
 const Header = (props) => {
   return (
-    <Fragment>
+    <div>
       <header className={classes.header}>
         <h1> ReactMeals</h1>
         <HeaderCartButton onClick={props.onShownCart} />
@@ -13,7 +13,7 @@ const Header = (props) => {
       <div className={classes["main-image"]}>
         <img src={mealsImg} alt="A table full of delicious food!"></img>
       </div>
-    </Fragment>
+    </div>
   );
 };
 export default Header;
